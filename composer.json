@@ -1,0 +1,39 @@
+{
+    "name": "spaceavocado/illogical",
+    "description": "A micro conditional engine used to parse raw logical and comparison expressions, evaluate the expression in the given data context, and provide access to a text form of the given expressions.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["expression", "logical", "expression-evaluator", "condition", "rules"],
+    "homepage": "https://github.com/spaceavocado/phyillogical",
+    "authors": [
+        {
+            "name": "David Horak",
+            "email": "info@davidhorak.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "phpstan/phpstan": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Illogical\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Illogical\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "analyse": "phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
